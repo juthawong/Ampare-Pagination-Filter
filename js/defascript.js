@@ -78,13 +78,14 @@ jQuery(document).ready(function(){
 	function init(){
 		//Initialize Thing
 		calculatepage();
+		amparepagination(1);
 		//Calculate Pagination
-		if(getPageFromHash() >0 ){
+		/*if(getPageFromHash() >0 ){
 			amparepagination(getPageFromHash()); //If we get hash pagintion more than 0. We start pagination at that page
 			jQuery('.pagination ul li a').eq(getPageFromHash() - 1).addClass('active'); //Make that pagination link active
 		}else{
 			jQuery('.pagination ul li a').first().addClass('active'); //Make the first pagination link active because we start at first page right?
-		}
+		}*/
 	}
 	init(); //Run Init Function
 
